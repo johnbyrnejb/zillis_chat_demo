@@ -5,24 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zilliz Chatbot Demo</title>
     <link rel="stylesheet" href="static/styles.css">
+    <style>
+        /* Common styling for text boxes */
+        .story-input {
+            width: 400px;
+            height: 40px;
+            font-size: 16px;
+            margin-bottom: 20px; /* Increase the margin to add more space between text boxes */
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1 style="text-align: center; margin-top: 500px">Chat with Zilliz Chat</h1>
+        <h1 style="text-align: center; margin-top: 350px;">Chat with Zilliz Chat</h1>
         <p style="text-align: center;">Powered by Confluent</p>
     </header>
 
-    <main style="text-align: center; margin-top: 500px;">
+    <main style="text-align: center; margin-top: 50px;">
         <form action="/chatbot" method="post">
-            <input type="text" id="user_message" name="user_message" placeholder="Hi! 👋 It's great to see you!" style="width: 400px; height: 40px; font-size: 16px;">
+            <input type="text" id="user_message" name="user_message" placeholder="Hi! 👋 It's great to see you!" class="story-input">
             <input type="submit" value="Submit">
         </form>
         <div id="chatbot_response"></div>
+
+        <h1 style="text-align: center; margin-top: 50px;">HackerNews Stories</h1>
+        <div style="display: flex; flex-direction: column; align-items: center;">
+            <input type="text" id="text_box_1" readonly class="story-input" placeholder="HN Story 1 will go here">
+            <input type="text" id="text_box_2" readonly class="story-input" placeholder="HN Story 2 will go here">
+            <input type="text" id="text_box_3" readonly class="story-input" placeholder="HN Story 3 will go here">
+        </div>
     </main>
 
     <footer style="text-align: center; margin-top: 50px;">
         <!-- First Logo -->
-        <img src="static/zilliz_alt-1.png" alt="Zilliz Logo" class="left-image">
+        <img src="static/zilliz_alt.png" alt="Zilliz Logo" class="left-image">
 
         <!-- Second Logo -->
         <img src="static/confluent_logo.png" alt="Confluent Logo" class="right-image">
