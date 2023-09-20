@@ -1,55 +1,68 @@
+/* styles.css */
+
+/* Font Family and Color */
+body {
+    font-family: 'Inter', sans-serif; /* Use the 'Inter' font family */
+    color: #cc477d; /* Set the text color to #cc477d */
+    background-color: #060025;
+}
+
+/* Positioning of #main */
 #main {
     position: fixed;
     top: 40%;
     right: 200px;
+    /* ... Other styles ... */
+}
 
-    …
-
+/* Styling for .messages */
 .messages {
-	display: flex;
-	flex-direction: column;
-	overflow: scroll;
-	height: 90%;
-	width: 100%;
-	background-color: white;
-	padding: 15px;
-	margin: 15px;
-	border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+    height: 90%;
+    width: 100%;
+    background-color: white;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 10px;
+    /* ... Other styles ... */
 }
 
-   …
-
-}
+/* Styling for .left-image */
 .left-image {
     width: 200px;
     height: auto;
-    position: absolute; /* Position the image absolutely */
-    top: 100px; /* Adjust top position as needed */
-    left: 100px; /* Adjust left position as needed */
-    transform: rotate(315deg); /* Rotate the image by 45 degrees */
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    transform: rotate(315deg);
+    /* ... Other styles ... */
 }
 
-/* CSS for positioning and rotating the second image */
+/* Styling for .right-image */
 .right-image {
     width: 200px;
     height: auto;
-    position: absolute; /* Position the image absolutely */
-    top: 100px; /* Adjust top position as needed */
-    right: 100px; /* Adjust right position as needed */
-    transform: rotate(45deg); /* Rotate the image by -45 degrees */
-
-/* styles.css */
+    position: absolute;
+    top: 100px;
+    right: 100px;
+    transform: rotate(45deg);
+    /* ... Other styles ... */
+}
 
 /* CSS for positioning the text box */
 #textbox-container {
     position: absolute;
-    top: 50%; /* Center vertically */
-    left: 10%; /* Adjust the left position as needed */
-    transform: translateY(-50%); /* Center vertically */
+    top: 50%;
+    left: 40%;
+    transform: translateY(-50%);
 }
 
+/* Styling for #textbox */
 #textbox {
     width: 300px;
     padding: 10px;
     font-size: 16px;
+    /* ... Other styles ... */
 }

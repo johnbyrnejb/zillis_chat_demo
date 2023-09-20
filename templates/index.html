@@ -1,42 +1,31 @@
 <!DOCTYPE html>
-<html>
-
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Zilliz Chatbot Demo</title>
-
-    <style>
-        #textbox-container {
-            position: absolute;
-            top: 33%; /* Adjust the percentage to control the vertical position */
-            left: 40%; /* Adjust the left position as needed */
-            transform: translateY(-50%); /* Center vertically */
-        }
-
-        #textbox {
-            width: 300px;
-            padding: 10px;
-            font-size: 16px;
-        }
-    </style>
-
-    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="stylesheet" href="static/styles.css">
 </head>
-
 <body>
-    <div style="text-align: center; margin-top: 20px;">
-        <h1>Zilliz Chat</h1>
+    <header>
+        <h1 style="text-align: center; margin-top: 500px">Chat with Zilliz Chat</h1>
+        <p style="text-align: center;">Powered by Confluent</p>
+    </header>
 
-       <div id="textbox-container">
-            <!-- Centered Text Box -->
-            <input type="text" id="textbox" placeholder="Enter your question here...">
-        </div>
+    <main style="text-align: center; margin-top: 500px;">
+        <form action="/chatbot" method="post">
+            <input type="text" id="user_message" name="user_message" placeholder="Hi! 👋 It's great to see you!" style="width: 400px; height: 40px; font-size: 16px;">
+            <input type="submit" value="Submit">
+        </form>
+        <div id="chatbot_response"></div>
+    </main>
 
+    <footer style="text-align: center; margin-top: 50px;">
         <!-- First Logo -->
-        <img src="static/zilliz_logo.png" alt="Logo 2" class="left-image">
+        <img src="static/zilliz_alt-1.png" alt="Zilliz Logo" class="left-image">
 
         <!-- Second Logo -->
-        <img src="static/confluent_logo.png" alt="Logo 2" class="right-image">
-    </div>
+        <img src="static/confluent_logo.png" alt="Confluent Logo" class="right-image">
+    </footer>
 </body>
-
 </html>
