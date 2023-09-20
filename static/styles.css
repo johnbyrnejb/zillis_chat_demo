@@ -1,0 +1,55 @@
+#main {
+    position: fixed;
+    top: 40%;
+    right: 200px;
+
+    …
+
+.messages {
+	display: flex;
+	flex-direction: column;
+	overflow: scroll;
+	height: 90%;
+	width: 100%;
+	background-color: white;
+	padding: 15px;
+	margin: 15px;
+	border-radius: 10px;
+}
+
+   …
+
+}
+.left-image {
+    width: 200px;
+    height: auto;
+    position: absolute; /* Position the image absolutely */
+    top: 100px; /* Adjust top position as needed */
+    left: 100px; /* Adjust left position as needed */
+    transform: rotate(315deg); /* Rotate the image by 45 degrees */
+}
+
+/* CSS for positioning and rotating the second image */
+.right-image {
+    width: 200px;
+    height: auto;
+    position: absolute; /* Position the image absolutely */
+    top: 100px; /* Adjust top position as needed */
+    right: 100px; /* Adjust right position as needed */
+    transform: rotate(45deg); /* Rotate the image by -45 degrees */
+
+/* styles.css */
+
+/* CSS for positioning the text box */
+#textbox-container {
+    position: absolute;
+    top: 50%; /* Center vertically */
+    left: 10%; /* Adjust the left position as needed */
+    transform: translateY(-50%); /* Center vertically */
+}
+
+#textbox {
+    width: 300px;
+    padding: 10px;
+    font-size: 16px;
+}

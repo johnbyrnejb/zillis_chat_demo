@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Zilliz Chatbot Demo</title>
+
+    <style>
+        #textbox-container {
+            position: absolute;
+            top: 33%; /* Adjust the percentage to control the vertical position */
+            left: 40%; /* Adjust the left position as needed */
+            transform: translateY(-50%); /* Center vertically */
+        }
+
+        #textbox {
+            width: 300px;
+            padding: 10px;
+            font-size: 16px;
+        }
+    </style>
+
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+
+<body>
+    <div style="text-align: center; margin-top: 20px;">
+        <h1>Zilliz Chat</h1>
+
+       <div id="textbox-container">
+            <!-- Centered Text Box -->
+            <input type="text" id="textbox" placeholder="Enter your question here...">
+        </div>
+
+        <!-- First Logo -->
+        <img src="static/zilliz_logo.png" alt="Logo 2" class="left-image">
+
+        <!-- Second Logo -->
+        <img src="static/confluent_logo.png" alt="Logo 2" class="right-image">
+    </div>
+</body>
+
+</html>
